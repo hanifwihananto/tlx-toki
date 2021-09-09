@@ -2,9 +2,12 @@
 using namespace std;
 
 int main(){
-	int n[101];
+	int a;
+	int total = 0;
 	
-	while( ){
-		
+	while(scanf("%d", &a) != EOF){
+		total += a;
 	}
+	
+	printf("%d", total);
 }
