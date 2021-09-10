@@ -1,24 +1,23 @@
-#include <bits/stdc++.h>
-using namespace std;
+#include <stdio.h>
 
-int main(){
-	int a, i, total[1000], max, min;
-	cin >> a;
+int main() {
+	int a,b,jumlah[1000],max,min;
+	scanf("%d",&a);
 	
-	for(i = 1; i <= a; i++){
-		cin >> total[i];
+	for(b=1; b <= a; b++) {
+		scanf("%d",&jumlah[b]);
 	}
 	
-	max = total[1];
-	min = total[1];
+	max=jumlah[1];
+	min=jumlah[1];
 	
-	for(i = 1; i <= a; i++) {
-		if (total[b] >= max) {
-			max = total[i];
+	for(b = 1; b <= a; b++) {
+		if (jumlah[b] >= max) {
+			max = jumlah[b];
 		}
-		else if (total[i] <= min) {
-			min = total[i];
+		else if (jumlah[b] <= min) {
+			min = jumlah[b];
 		}
-	
+	}
+	printf("%d %d\n",max,min);
 }
-
