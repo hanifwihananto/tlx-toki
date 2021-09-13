@@ -10,8 +10,8 @@ int main(){
 			cout << " ";
 		}
 		for(k = 1; k <= i; k++) {
-            cout << "*";
-        }
+            		cout << "*";
+        	}
 		cout << endl;
 	}
 }
